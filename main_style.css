@@ -1,0 +1,53 @@
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+    margin: 1rem;
+    border-radius: 16px;
+    flex-direction: column;
+}
+
+.list-add {
+    margin-top: 2rem;
+    display: flex;
+    background-color: #fff;
+    border-radius: 16px;
+    width: 85vw;
+    height: 100px;
+    margin-bottom: 2rem;
+}
+
+input[type=button], input[type=text] {
+    border-radius: 16px;
+    width: 50%;
+    margin: 10px;
+}
+
+.list-item:first-child {
+    margin-top: 2rem;
+}
+
+.list-item {
+    display: flex;
+    background-color: #fff;
+    border-radius: 16px;
+    width: 85vw;
+    height: 100px;
+    margin-bottom: 2rem;
+}
+
+input[type=checkbox] {
+    display: flex;
+    align-items: center;
+    height: inherit;
+    transform: scale(2);
+    margin: 0 2rem;
+}
+
+.list-item-text {
+    display: flex;
+    align-items: center;
+    /* cursor: default; */
+}

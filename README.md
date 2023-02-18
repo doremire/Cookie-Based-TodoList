@@ -3,24 +3,6 @@
 </p>
 
 <h1 align="center">🍪 Cookie-TODO 🍪</h1>
-
-<p align="center">
-  <a href="https://doremire-server.com/apps/Cookie-TODO/"><img src="https://img.shields.io/badge/website-up-brightgreen.svg" alt="Website"></a>
-  <a href="https://github.com/doremire/Cookie-TODO/issues"><img src="https://img.shields.io/github/issues/username/repo.svg" alt="Issues"></a>
-  <a href="https://github.com/doremire/Cookie-TODO/blob/main/LICENSE"><img src="https://img.shields.io/github/license/username/repo.svg" alt="License"></a>
-</p>
-
-
-  <p align="center">
-    </br>
-    <a href="https://doremire-server.com/apps/Cookie-TODO/">View Demo</a>
-    ·
-    <a href="https://github.com/doremire/Cookie-TODO/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/doremire/Cookie-TODO/issues">Request Feature</a>
-  </p>
-</p>
-
 <p align="center">
   🎉 Cookieを利用したモダンなTODOリスト! 🎉
 </p>

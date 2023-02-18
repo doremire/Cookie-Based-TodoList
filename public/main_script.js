@@ -5,7 +5,7 @@
     // 初回アクセス時
     if (document.cookie.indexOf('visited=yes') === -1) {
         document.cookie = 'visited=yes path=/';
-        Cookies.set(`length`, `0`);
+        Cookies.set(`length`, `0`, { expires: 365 });
     } 
 
 
@@ -29,7 +29,7 @@
 
 
         //Cookieに登録
-            Cookies.set(`list${Number(Cookies.get(["length"]))+1}`, `${list_text.value}`)
+        Cookies.set(`list${Number(Cookies.get(["length"])) + 1}`, `${list_text.value}`, { expires: 365 })
 
 
         // 削除ボタンに対するクリックイベントリスナーを追加
@@ -37,7 +37,7 @@
             e.currentTarget.parentElement.remove();
             //Cookieに登録
             // └ リスト数を除算
-            Cookies.set(`length`, `${Number(Cookies.get(["length"])) - 1}`);
+            Cookies.set(`length`, `${Number(Cookies.get(["length"])) - 1}`, { expires: 365 });
             console.log("リスト数(削除):" + Cookies.get(["length"]));
 
 
@@ -47,7 +47,7 @@
         //Cookieに登録
         // └ リスト数を加算
 
-        Cookies.set(`length`, `${Number(Cookies.get(["length"])) + 1}`);
+        Cookies.set(`length`, `${Number(Cookies.get(["length"])) + 1}`, { expires: 365 });
 
         console.log("リスト数(追加):" + Cookies.get(["length"]));
     });
@@ -75,19 +75,19 @@
     let items1 = document.querySelectorAll('.list-item');
     for (let p = 0; p < items1.length; p++) {
         items1[p].addEventListener("click", function (e) {
-            // console.log(Number(e.currentTarget.id)+1);
-            // console.log(e.currentTarget);
-
+            console.log(e.currentTarget);
             e.currentTarget.remove();
 
             // Cookie削除 
-            Cookies.set(`length`, `${Number(Cookies.get(["length"])) - 1}`);
+            Cookies.set(`length`, `${Number(Cookies.get(["length"])) - 1}`, { expires: 365 });
             Cookies.remove(`list${e.currentTarget.id}`, { path: '' })
             Cookies.remove(`list${Number(e.currentTarget.id)+1}`, { path: '' })
             // リストの連番を振り直す
-            
-            for (let i = 1; i <= document.querySelectorAll(".list-item").length+1; i++) {
-                Cookies.set(`list${i+1}`, `${document.querySelectorAll(".list-item")[i].innerText}`)
+            console.log(document.querySelectorAll(".list-item").length);
+            for (let i = 0; i <= document.querySelectorAll(".list-item").length; i++) {
+
+                // 問題発生箇所
+                Cookies.set(`list${i + 1}`, `${document.querySelectorAll(".list-item")[i].innerText}`, { expires: 365 })
                 }
                 
             });

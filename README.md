@@ -47,10 +47,10 @@ TODOリストは、定期的に確認して、進捗状況や優先度の見直�
 ## 📡More resources
 
 - js-cookie
-[:octocat:github repository]
-└(https://github.com/js-cookie/js-cookie)
+
+     └[:octocat:github repository](https://github.com/js-cookie/js-cookie)
 
 
 ## 🤷🏼About
 
-Explain who has contributed to the repository. You can say it has been part of a class you've taken at Tilburg University.
+Hi 👋🏻, I'm doremire learning web development. UwU

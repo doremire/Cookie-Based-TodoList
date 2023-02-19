@@ -32,11 +32,13 @@ TODOリストを使うことで、やるべきことが明確になり、タス�
 
 
 ```
+
 ├── index.html
 ├── README.md
 └── public
     ├── main_script.js
     └── main_style.css
+    
 ```
 
 ## 🛠Running instructions
